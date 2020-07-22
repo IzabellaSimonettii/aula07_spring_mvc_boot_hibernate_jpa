@@ -13,6 +13,11 @@ public class Pessoa {
     private Long id;
     private String nome;
 
+//    EXERCICIO
+//    1. Estabeleça um relacionamento 1 x N entre a classe Veículo já existente e uma nova classe chamada Pessoa:
+//    Uma pessoa tem N veículos e um veículo pertence a uma única pessoa. Faça as anotações apropriadas usando a JPA.
+
+//    AQUI UMA PESSOA PODE TER MUITOS VEICULOS
     @OneToMany(mappedBy = "pessoa", cascade = CascadeType.ALL)
     private List<Veiculo> veiculos;
 

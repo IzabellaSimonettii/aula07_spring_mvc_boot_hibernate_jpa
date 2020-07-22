@@ -31,6 +31,7 @@ public class Veiculo {
     @JoinColumn(name = "jtb_identificador")
     private Placa placa;
 
+//    Muito veiculos podem pertencer a uma pessoa
     @ManyToOne
     private Pessoa pessoa;
 
